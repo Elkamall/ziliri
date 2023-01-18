@@ -419,9 +419,8 @@ public class opsibelico2 extends javax.swing.JFrame {
 
     private void kekeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kekeranjangActionPerformed
         // TODO add your handling code here:
-        totalbelanja tb = new totalbelanja();
-        tb.setLocationRelativeTo(null);
-        tb.setVisible(true);
+        Totalbelanja.setLocationRelativeTo(null);
+        Totalbelanja.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_kekeranjangActionPerformed
 
