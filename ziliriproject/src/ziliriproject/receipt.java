@@ -31,17 +31,19 @@ public class receipt extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         Tonama = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(958, 665));
-        setSize(new java.awt.Dimension(958, 665));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setPreferredSize(new java.awt.Dimension(958, 665));
 
         jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel2.setText("Successful Payment");
+
+        Tonama.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        Tonama.setText("Terimakasih Kak, Semoga Kak  suka dengan hadiahnya yahhh :)");
 
         jButton1.setText("Oke");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -50,45 +52,46 @@ public class receipt extends javax.swing.JFrame {
             }
         });
 
-        Tonama.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        Tonama.setText("Terimakasih Kak, Semoga Kak  suka dengan hadiahnya yahhh :)");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(127, 127, 127))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(109, 109, 109)
+                .addGap(110, 110, 110)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Tonama)
                     .addComponent(jLabel2))
-                .addContainerGap(290, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(155, 155, 155))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(270, 270, 270)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(271, 271, 271)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(Tonama)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(104, 104, 104))
+                .addGap(105, 105, 105))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -97,7 +100,7 @@ public class receipt extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         int input = JOptionPane.showConfirmDialog(null, "Apakah kamu ingin berbelanja lagi?", "Terimakasih telah berbelanja!!", JOptionPane.YES_NO_OPTION);
-              //0= yes, 1=no, 2=cancel
+        //0= yes, 1=no, 2=cancel
         if(input == 0){
             pilihgender pg = new pilihgender();
             pg.setLocationRelativeTo(null);

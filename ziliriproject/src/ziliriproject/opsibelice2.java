@@ -422,6 +422,7 @@ public class opsibelice2 extends javax.swing.JFrame {
 
     private void kekeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kekeranjangActionPerformed
         // TODO add your handling code here:
+        
         Totalbelanja.setLocationRelativeTo(null);
         Totalbelanja.setVisible(true);
         this.setVisible(false);
