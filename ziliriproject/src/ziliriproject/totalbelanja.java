@@ -4,6 +4,7 @@
  */
 package ziliriproject;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 /**
  *
@@ -12,12 +13,20 @@ import javax.swing.table.DefaultTableModel;
 public class totalbelanja extends javax.swing.JFrame {
     public ArrayList nama = new ArrayList();
     public ArrayList total = new ArrayList();
+    int sum = 0;
+    int x = 0;
 
     /**
      * Creates new form totalbelanja
      */
     public totalbelanja() {
         initComponents();
+    }
+    public totalbelanja(int harga1co,int harga2co,int harga3co,String nama1co,String nama2co,String nama3co,int harga4co,int harga5co,int harga6co,String nama4co,String nama5co,String nama6co,int harga1ce,int harga2ce,int harga3ce,String nama1ce,String nama2ce,String nama3ce,int harga4ce,int harga5ce,int harga6ce,String nama4ce,String nama5ce,String nama6ce) {
+        
+    }
+    public totalbelanja(int harga1co,int harga2co,int harga3co,int harga4co,int harga5co,int harga6co,int harga1ce,int harga2ce,int harga3ce,int harga4ce,int harga5ce,int harga6ce){
+        
     }
 
     /**
@@ -46,14 +55,14 @@ public class totalbelanja extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        tabel = new javax.swing.JTable();
+        printbtn = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        totalharga = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        paybtn = new javax.swing.JButton();
+        cancelbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(958, 665));
@@ -102,59 +111,60 @@ public class totalbelanja extends javax.swing.JFrame {
 
         jScrollPane1.setBorder(new javax.swing.border.MatteBorder(null));
 
-        jTable1.setAutoCreateRowSorter(true);
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String [] {
                 "NO.", "Description", "Price"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
-        jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jTable1.setShowGrid(true);
-        jTable1.getTableHeader().setResizingAllowed(false);
-        jScrollPane1.setViewportView(jTable1);
+        tabel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tabel.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        tabel.setShowGrid(false);
+        jScrollPane1.setViewportView(tabel);
 
-        jButton1.setText("Print");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        printbtn.setText("Print");
+        printbtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        printbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                printbtnActionPerformed(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel10.setText("Receipt");
 
         jLabel11.setText("Total :");
 
-        jLabel12.setText("Rp. ");
+        totalharga.setText("Rp. ");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Payment", "COD", "Transfer", "Gopay/Dana/Ovo" }));
         jComboBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        jButton3.setText("Pay");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        paybtn.setText("Pay");
+        paybtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        paybtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paybtnActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("cancel");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cancelbtn.setText("Cancel");
+        cancelbtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cancelbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -190,7 +200,7 @@ public class totalbelanja extends javax.swing.JFrame {
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jButton2))))))
+                                    .addComponent(cancelbtn))))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
@@ -203,12 +213,12 @@ public class totalbelanja extends javax.swing.JFrame {
                                 .addComponent(jLabel11)
                                 .addGap(39, 39, 39)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton1))
+                                    .addComponent(printbtn)
+                                    .addComponent(totalharga, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addComponent(paybtn, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(109, 109, 109))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -228,7 +238,7 @@ public class totalbelanja extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
-                            .addComponent(jLabel12)
+                            .addComponent(totalharga)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
@@ -263,9 +273,9 @@ public class totalbelanja extends javax.swing.JFrame {
                             .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(35, 35, 35)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(printbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(paybtn, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cancelbtn))
                 .addContainerGap(174, Short.MAX_VALUE))
         );
 
@@ -296,6 +306,34 @@ public class totalbelanja extends javax.swing.JFrame {
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void cancelbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelbtnActionPerformed
+        // TODO add your handling code here:
+        pilihgender pg = new pilihgender();
+            pg.setLocationRelativeTo(null);
+            pg.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_cancelbtnActionPerformed
+
+    private void paybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paybtnActionPerformed
+        // TODO add your handling code here:
+       JOptionPane.showMessageDialog(null,"Terima Kasih, ditunggu orderan selanjutnya");
+    }//GEN-LAST:event_paybtnActionPerformed
+
+    private void printbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printbtnActionPerformed
+        // TODO add your handling code here:
+        DefaultTableModel model = (DefaultTableModel)tabel.getModel();
+        for(int x = 0; x < nama.size(); x++){
+            model.addRow(new Object[]{
+                nama.get(x),
+                total.get(x)
+            });
+        }
+        for (int x = 0; x<tabel.getRowCount(); x++){
+            sum = sum + Integer.parseInt(tabel.getValueAt(x, 1).toString());
+        }
+        totalharga.setText("Rp. " + Integer.toString(sum));;
+    }//GEN-LAST:event_printbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -335,14 +373,11 @@ public class totalbelanja extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton cancelbtn;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -353,12 +388,15 @@ public class totalbelanja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JButton paybtn;
+    private javax.swing.JButton printbtn;
+    private javax.swing.JTable tabel;
+    private javax.swing.JLabel totalharga;
     // End of variables declaration//GEN-END:variables
 }
