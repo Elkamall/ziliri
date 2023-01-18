@@ -29,8 +29,9 @@ public class opsico extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        hampersco = new javax.swing.JButton();
+        balik2 = new javax.swing.JButton();
+        buketco = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,47 +41,76 @@ public class opsico extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ziliriproject/hampersopsi.jpg"))); // NOI18N
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 153));
-        jButton2.setFont(new java.awt.Font("Palatino Linotype", 1, 36)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(153, 153, 255));
-        jButton2.setText("Hampers");
+        hampersco.setBackground(new java.awt.Color(0, 0, 153));
+        hampersco.setFont(new java.awt.Font("Palatino Linotype", 1, 36)); // NOI18N
+        hampersco.setForeground(new java.awt.Color(153, 153, 255));
+        hampersco.setText("Hampers");
+        hampersco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hamperscoActionPerformed(evt);
+            }
+        });
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 153));
-        jButton3.setFont(new java.awt.Font("Palatino Linotype", 1, 36)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(153, 153, 255));
-        jButton3.setText("Bouquet");
+        balik2.setBackground(new java.awt.Color(0, 0, 153));
+        balik2.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        balik2.setForeground(new java.awt.Color(153, 153, 255));
+        balik2.setText("back");
+        balik2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                balik2ActionPerformed(evt);
+            }
+        });
+
+        buketco.setBackground(new java.awt.Color(0, 0, 153));
+        buketco.setFont(new java.awt.Font("Palatino Linotype", 1, 36)); // NOI18N
+        buketco.setForeground(new java.awt.Color(153, 153, 255));
+        buketco.setText("Bouquet");
+        buketco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buketcoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(111, 111, 111)
-                .addComponent(jLabel1)
-                .addGap(123, 123, 123)
-                .addComponent(jLabel2)
-                .addContainerGap(124, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(164, 164, 164)
-                .addComponent(jButton3)
+                .addGap(166, 166, 166)
+                .addComponent(buketco)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(175, 175, 175))
+                .addComponent(hampersco)
+                .addGap(171, 171, 171))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(jLabel1)
+                        .addGap(123, 123, 123)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(balik2)))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(120, 120, 120)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(138, 138, 138)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 176, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(11, 11, 11)))
-                .addGap(52, 52, 52)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
-                .addContainerGap(259, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buketco)
+                            .addComponent(hampersco))
+                        .addGap(66, 66, 66)))
+                .addComponent(balik2)
+                .addGap(18, 18, 18))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,11 +123,35 @@ public class opsico extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void balik2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_balik2ActionPerformed
+        // TODO add your handling code here:
+        pilihgender pg = new pilihgender();
+            pg.setLocationRelativeTo(null);
+            pg.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_balik2ActionPerformed
+
+    private void buketcoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buketcoActionPerformed
+        // TODO add your handling code here:
+        opsibelico2 obco2 = new opsibelico2();
+        obco2.setLocationRelativeTo(null);
+        obco2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_buketcoActionPerformed
+
+    private void hamperscoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hamperscoActionPerformed
+        // TODO add your handling code here:
+        opsibelico obco = new opsibelico();
+        obco.setLocationRelativeTo(null);
+        obco.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_hamperscoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,14 +183,17 @@ public class opsico extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new opsico().setVisible(true);
+                opsico oco = new opsico();
+                oco.setLocationRelativeTo(null);
+                oco.setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton balik2;
+    private javax.swing.JButton buketco;
+    private javax.swing.JButton hampersco;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
