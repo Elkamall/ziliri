@@ -85,6 +85,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         plus1.setBackground(new java.awt.Color(0, 0, 153));
         plus1.setForeground(new java.awt.Color(153, 153, 255));
         plus1.setText("+");
+        plus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus1ActionPerformed(evt);
@@ -94,6 +95,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         plus2.setBackground(new java.awt.Color(0, 0, 153));
         plus2.setForeground(new java.awt.Color(153, 153, 255));
         plus2.setText("+");
+        plus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus2ActionPerformed(evt);
@@ -103,6 +105,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         plus3.setBackground(new java.awt.Color(0, 0, 153));
         plus3.setForeground(new java.awt.Color(153, 153, 255));
         plus3.setText("+");
+        plus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus3ActionPerformed(evt);
@@ -112,6 +115,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         min2.setBackground(new java.awt.Color(0, 0, 153));
         min2.setForeground(new java.awt.Color(153, 153, 255));
         min2.setText("-");
+        min2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min2ActionPerformed(evt);
@@ -121,6 +125,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         min1.setBackground(new java.awt.Color(0, 0, 153));
         min1.setForeground(new java.awt.Color(153, 153, 255));
         min1.setText("-");
+        min1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min1ActionPerformed(evt);
@@ -130,6 +135,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         min3.setBackground(new java.awt.Color(0, 0, 153));
         min3.setForeground(new java.awt.Color(153, 153, 255));
         min3.setText("-");
+        min3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min3ActionPerformed(evt);
@@ -148,22 +154,23 @@ public class opsibelico2 extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(255, 204, 255));
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel2.setText("Bouquet Snack");
+        jLabel2.setText("Bouquet Snack - 50k");
 
         jLabel3.setBackground(new java.awt.Color(255, 204, 255));
         jLabel3.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel3.setText("Bouquet Bunga");
+        jLabel3.setText("Bouquet Bunga - 100k");
 
         jLabel4.setBackground(new java.awt.Color(255, 204, 255));
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel4.setText("Bouquet Boneka");
+        jLabel4.setText("Bouquet Boneka - 70k");
 
         keranjang1.setBackground(new java.awt.Color(0, 0, 153));
         keranjang1.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang1.setForeground(new java.awt.Color(153, 153, 255));
         keranjang1.setText("Tambah ke keranjang");
+        keranjang1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang1ActionPerformed(evt);
@@ -174,6 +181,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         keranjang2.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang2.setForeground(new java.awt.Color(153, 153, 255));
         keranjang2.setText("Tambah ke keranjang");
+        keranjang2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang2ActionPerformed(evt);
@@ -184,6 +192,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         keranjang3.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang3.setForeground(new java.awt.Color(153, 153, 255));
         keranjang3.setText("Tambah ke keranjang");
+        keranjang3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang3ActionPerformed(evt);
@@ -194,6 +203,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         balik2co.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         balik2co.setForeground(new java.awt.Color(153, 153, 255));
         balik2co.setText("back");
+        balik2co.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         balik2co.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 balik2coActionPerformed(evt);
@@ -204,6 +214,7 @@ public class opsibelico2 extends javax.swing.JFrame {
         kekeranjang.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         kekeranjang.setForeground(new java.awt.Color(153, 153, 255));
         kekeranjang.setText("Lihat Keranjang");
+        kekeranjang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         kekeranjang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kekeranjangActionPerformed(evt);
@@ -238,22 +249,19 @@ public class opsibelico2 extends javax.swing.JFrame {
                                     .addComponent(min3, javax.swing.GroupLayout.Alignment.TRAILING))))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
                                     .addComponent(keranjang1))
                                 .addGap(424, 424, 424))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addGap(85, 85, 85)
+                                .addGap(44, 44, 44)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(keranjang2)
-                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel3)
-                                            .addComponent(keranjang3))
-                                        .addGap(0, 0, Short.MAX_VALUE))))))
+                                    .addComponent(jLabel4)
+                                    .addComponent(keranjang2)
+                                    .addComponent(jLabel3)
+                                    .addComponent(keranjang3))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -261,11 +269,6 @@ public class opsibelico2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(balik2co)
                         .addGap(17, 17, 17))))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(384, 384, 384)
-                    .addComponent(jLabel4)
-                    .addContainerGap(418, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -291,8 +294,10 @@ public class opsibelico2 extends javax.swing.JFrame {
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(281, 281, 281)
-                        .addComponent(plus2)
-                        .addGap(19, 19, 19)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(plus2)
+                            .addComponent(jLabel4))
+                        .addGap(15, 15, 15)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hasil2)
                             .addComponent(keranjang2))
@@ -320,11 +325,6 @@ public class opsibelico2 extends javax.swing.JFrame {
                             .addComponent(balik2co)
                             .addComponent(kekeranjang))
                         .addGap(16, 16, 16))))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(286, 286, 286)
-                    .addComponent(jLabel4)
-                    .addContainerGap(352, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

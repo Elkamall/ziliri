@@ -10,15 +10,15 @@ package ziliriproject;
  */
 public class opsibelice extends javax.swing.JFrame {
     totalbelanja Totalbelanja;
-    int count1 = 0;
-    int count2 = 0;
-    int count3 = 0;
-    int harga1;
-    int harga2;
-    int harga3;
-    String nama1;
-    String nama2;
-    String nama3;
+    int count1ce = 0;
+    int count2ce = 0;
+    int count3ce = 0;
+    int harga1ce;
+    int harga2ce;
+    int harga3ce;
+    String nama1ce;
+    String nama2ce;
+    String nama3ce;
 
     /**
      * Creates new form opsibelice
@@ -83,6 +83,7 @@ public class opsibelice extends javax.swing.JFrame {
         plus1.setBackground(new java.awt.Color(255, 204, 255));
         plus1.setForeground(new java.awt.Color(196, 79, 130));
         plus1.setText("+");
+        plus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus1ActionPerformed(evt);
@@ -92,6 +93,7 @@ public class opsibelice extends javax.swing.JFrame {
         plus2.setBackground(new java.awt.Color(255, 204, 255));
         plus2.setForeground(new java.awt.Color(196, 79, 130));
         plus2.setText("+");
+        plus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus2ActionPerformed(evt);
@@ -101,6 +103,7 @@ public class opsibelice extends javax.swing.JFrame {
         plus3.setBackground(new java.awt.Color(255, 204, 255));
         plus3.setForeground(new java.awt.Color(196, 79, 130));
         plus3.setText("+");
+        plus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus3ActionPerformed(evt);
@@ -110,6 +113,7 @@ public class opsibelice extends javax.swing.JFrame {
         min3.setBackground(new java.awt.Color(255, 204, 255));
         min3.setForeground(new java.awt.Color(196, 79, 130));
         min3.setText("-");
+        min3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min3ActionPerformed(evt);
@@ -119,6 +123,7 @@ public class opsibelice extends javax.swing.JFrame {
         min2.setBackground(new java.awt.Color(255, 204, 255));
         min2.setForeground(new java.awt.Color(196, 79, 130));
         min2.setText("-");
+        min2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min2ActionPerformed(evt);
@@ -128,6 +133,7 @@ public class opsibelice extends javax.swing.JFrame {
         min1.setBackground(new java.awt.Color(255, 204, 255));
         min1.setForeground(new java.awt.Color(196, 79, 130));
         min1.setText("-");
+        min1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min1ActionPerformed(evt);
@@ -147,6 +153,7 @@ public class opsibelice extends javax.swing.JFrame {
         balik2.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         balik2.setForeground(new java.awt.Color(196, 79, 130));
         balik2.setText(" back");
+        balik2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         balik2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 balik2ActionPerformed(evt);
@@ -156,12 +163,13 @@ public class opsibelice extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(255, 204, 255));
         jLabel1.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 204, 255));
-        jLabel1.setText("Paket 2");
+        jLabel1.setText("Paket 2 - 70k");
 
         keranjang1.setBackground(new java.awt.Color(255, 204, 255));
         keranjang1.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang1.setForeground(new java.awt.Color(196, 79, 130));
         keranjang1.setText("Tambah ke keranjang");
+        keranjang1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang1ActionPerformed(evt);
@@ -171,12 +179,13 @@ public class opsibelice extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(255, 204, 255));
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 204, 255));
-        jLabel2.setText("Paket 1");
+        jLabel2.setText("Paket 1 - 50k");
 
         keranjang2.setBackground(new java.awt.Color(255, 204, 255));
         keranjang2.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang2.setForeground(new java.awt.Color(196, 79, 130));
         keranjang2.setText("Tambah ke keranjang");
+        keranjang2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang2ActionPerformed(evt);
@@ -186,12 +195,13 @@ public class opsibelice extends javax.swing.JFrame {
         jLabel6.setBackground(new java.awt.Color(255, 204, 255));
         jLabel6.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 204, 255));
-        jLabel6.setText("Paket 3");
+        jLabel6.setText("Paket 3 - 100k");
 
         keranjang3.setBackground(new java.awt.Color(255, 204, 255));
         keranjang3.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang3.setForeground(new java.awt.Color(196, 79, 130));
         keranjang3.setText("Tambah ke keranjang");
+        keranjang3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang3ActionPerformed(evt);
@@ -202,6 +212,7 @@ public class opsibelice extends javax.swing.JFrame {
         kekeranjang.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         kekeranjang.setForeground(new java.awt.Color(196, 79, 130));
         kekeranjang.setText("Lihat Keranjang");
+        kekeranjang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         kekeranjang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kekeranjangActionPerformed(evt);
@@ -215,6 +226,18 @@ public class opsibelice extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(105, 105, 105)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 423, Short.MAX_VALUE)
+                                .addComponent(kekeranjang)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(balik2))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(min3)
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -237,15 +260,7 @@ public class opsibelice extends javax.swing.JFrame {
                                     .addComponent(keranjang2)
                                     .addComponent(jLabel6)
                                     .addComponent(keranjang3)))))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(min3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 400, Short.MAX_VALUE)
-                        .addComponent(kekeranjang)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(balik2)))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -253,26 +268,31 @@ public class opsibelice extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(plus1)
-                            .addComponent(jLabel2))
-                        .addGap(18, 18, 18)
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(18, 18, 18))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(plus1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hasil1)
                             .addComponent(keranjang1))
-                        .addGap(18, 18, 18)
-                        .addComponent(min1)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(109, 109, 109)
+                                .addGap(150, 150, 150)
                                 .addComponent(jLabel1)
                                 .addGap(18, 18, 18))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(2, 2, 2)
+                                .addComponent(min1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(plus2)
                                 .addGap(32, 32, 32)))
-                        .addComponent(keranjang2)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(keranjang2)
+                            .addComponent(min2))
                         .addGap(59, 59, 59))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGap(64, 64, 64)
@@ -281,19 +301,21 @@ public class opsibelice extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hasil2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(min2)))
+                        .addGap(29, 29, 29)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(plus3))
-                        .addGap(21, 21, 21)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(plus3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addComponent(jLabel6)
+                                .addGap(22, 22, 22)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(keranjang3)
                             .addComponent(hasil3))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(min3)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -325,38 +347,38 @@ public class opsibelice extends javax.swing.JFrame {
 
     private void plus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plus1ActionPerformed
         // TODO add your handling code here:
-        count1++;
-        hasil1.setText(count1 + "");
+        count1ce++;
+        hasil1.setText(count1ce + "");
     }//GEN-LAST:event_plus1ActionPerformed
 
     private void plus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plus2ActionPerformed
         // TODO add your handling code here:
-        count2++;
-        hasil2.setText(count2 + "");
+        count2ce++;
+        hasil2.setText(count2ce + "");
     }//GEN-LAST:event_plus2ActionPerformed
 
     private void plus3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plus3ActionPerformed
         // TODO add your handling code here:
-        count3++;
-        hasil3.setText(count3 + "");
+        count3ce++;
+        hasil3.setText(count3ce + "");
     }//GEN-LAST:event_plus3ActionPerformed
 
     private void min3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_min3ActionPerformed
         // TODO add your handling code here:
-        count3--;
-        hasil3.setText(count3 + "");
+        count3ce--;
+        hasil3.setText(count3ce + "");
     }//GEN-LAST:event_min3ActionPerformed
 
     private void min2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_min2ActionPerformed
         // TODO add your handling code here:
-        count2--;
-        hasil2.setText(count2 + "");
+        count2ce--;
+        hasil2.setText(count2ce + "");
     }//GEN-LAST:event_min2ActionPerformed
 
     private void min1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_min1ActionPerformed
         // TODO add your handling code here:
-        count1--;
-        hasil1.setText(count1 + "");
+        count1ce--;
+        hasil1.setText(count1ce + "");
     }//GEN-LAST:event_min1ActionPerformed
 
     private void balik2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_balik2ActionPerformed
@@ -369,31 +391,31 @@ public class opsibelice extends javax.swing.JFrame {
 
     private void keranjang1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keranjang1ActionPerformed
         // TODO add your handling code here:
-        nama1 = "Hampers Paket 1 (wanita)";
-        harga1 = count1 * 50000;
-        if(count1 != 0){
-            Totalbelanja.nama.add(nama1);
-            Totalbelanja.total.add(harga1);
+        nama1ce = "Hampers Paket 1 (wanita)";
+        harga1ce = count1ce * 50000;
+        if(count1ce != 0){
+            Totalbelanja.nama.add(nama1ce);
+            Totalbelanja.total.add(harga1ce);
         }
     }//GEN-LAST:event_keranjang1ActionPerformed
 
     private void keranjang2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keranjang2ActionPerformed
         // TODO add your handling code here:
-        nama2 = "Hampers Paket 2 (wanita)";
-        harga2 = count2 * 70000;
-        if(count2 != 0){
-            Totalbelanja.nama.add(nama2);
-            Totalbelanja.total.add(harga2);
+        nama2ce = "Hampers Paket 2 (wanita)";
+        harga2ce = count2ce * 70000;
+        if(count2ce != 0){
+            Totalbelanja.nama.add(nama2ce);
+            Totalbelanja.total.add(harga2ce);
         }
     }//GEN-LAST:event_keranjang2ActionPerformed
 
     private void keranjang3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keranjang3ActionPerformed
         // TODO add your handling code here:
-        nama3 = "Hampers Paket 3 (wanita)";
-        harga3 = count3 * 100000;
-        if(count3 != 0){
-            Totalbelanja.nama.add(nama3);
-            Totalbelanja.total.add(harga3);
+        nama3ce = "Hampers Paket 3 (wanita)";
+        harga3ce = count3ce * 100000;
+        if(count3ce != 0){
+            Totalbelanja.nama.add(nama3ce);
+            Totalbelanja.total.add(harga3ce);
         }
     }//GEN-LAST:event_keranjang3ActionPerformed
 

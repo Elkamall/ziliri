@@ -46,6 +46,7 @@ public class pilihgender extends javax.swing.JFrame {
 
         buttonce.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ziliriproject/perempuan.jpeg"))); // NOI18N
         buttonce.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        buttonce.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         buttonce.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonceActionPerformed(evt);
@@ -54,6 +55,7 @@ public class pilihgender extends javax.swing.JFrame {
 
         buttonco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ziliriproject/laki.jpeg"))); // NOI18N
         buttonco.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        buttonco.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         buttonco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttoncoActionPerformed(evt);

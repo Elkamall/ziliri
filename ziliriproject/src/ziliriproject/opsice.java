@@ -46,6 +46,7 @@ public class opsice extends javax.swing.JFrame {
         hampersce.setFont(new java.awt.Font("Palatino Linotype", 1, 36)); // NOI18N
         hampersce.setForeground(new java.awt.Color(196, 79, 130));
         hampersce.setText("Hampers");
+        hampersce.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         hampersce.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hampersceActionPerformed(evt);
@@ -56,6 +57,7 @@ public class opsice extends javax.swing.JFrame {
         buketce.setFont(new java.awt.Font("Palatino Linotype", 1, 36)); // NOI18N
         buketce.setForeground(new java.awt.Color(196, 79, 130));
         buketce.setText("Bouquet");
+        buketce.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         buketce.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buketceActionPerformed(evt);
@@ -66,6 +68,7 @@ public class opsice extends javax.swing.JFrame {
         balik1.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         balik1.setForeground(new java.awt.Color(196, 79, 130));
         balik1.setText(" back");
+        balik1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         balik1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 balik1ActionPerformed(evt);

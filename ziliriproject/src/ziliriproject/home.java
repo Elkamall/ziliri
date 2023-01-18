@@ -80,6 +80,7 @@ public class home extends javax.swing.JFrame {
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ziliriproject/logo again.png"))); // NOI18N
         jButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(2, 2, 2, 2));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);

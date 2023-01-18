@@ -29,7 +29,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel1" min="-2" pref="665" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -42,7 +42,7 @@
           <Color blue="ff" green="99" red="99" type="rgb"/>
         </Property>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[958, 770]"/>
+          <Dimension value="[958, 665]"/>
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
@@ -234,6 +234,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="+"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="plus2ActionPerformed"/>
@@ -250,7 +253,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Paket 1"/>
+            <Property name="text" type="java.lang.String" value="Paket 1 - 50k"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="plus3">
@@ -262,6 +265,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="+"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="plus3ActionPerformed"/>
@@ -276,6 +282,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="+"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="plus1ActionPerformed"/>
@@ -290,6 +299,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="-"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="min1ActionPerformed"/>
@@ -304,6 +316,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="-"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="min2ActionPerformed"/>
@@ -318,6 +333,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="-"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="min3ActionPerformed"/>
@@ -335,6 +353,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tambah ke keranjang"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="keranjang2ActionPerformed"/>
@@ -357,7 +378,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Paket 2"/>
+            <Property name="text" type="java.lang.String" value="Paket 2 - 70k"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="keranjang1">
@@ -372,6 +393,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tambah ke keranjang"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="keranjang1ActionPerformed"/>
@@ -389,6 +413,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tambah ke keranjang"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="keranjang3ActionPerformed"/>
@@ -405,7 +432,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Paket 3"/>
+            <Property name="text" type="java.lang.String" value="Paket 3 - 100k"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="hasil2">
@@ -432,6 +459,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="back"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="balik2coActionPerformed"/>
@@ -449,6 +479,9 @@
               <Color blue="ff" green="99" red="99" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Lihat Keranjang"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kekeranjangActionPerformed"/>

@@ -67,7 +67,7 @@ public class opsibelico extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 255));
-        jPanel1.setPreferredSize(new java.awt.Dimension(958, 770));
+        jPanel1.setPreferredSize(new java.awt.Dimension(958, 665));
         jPanel1.setRequestFocusEnabled(false);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ziliriproject/hampersco3.jpg"))); // NOI18N
@@ -85,6 +85,7 @@ public class opsibelico extends javax.swing.JFrame {
         plus2.setBackground(new java.awt.Color(0, 0, 153));
         plus2.setForeground(new java.awt.Color(153, 153, 255));
         plus2.setText("+");
+        plus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus2ActionPerformed(evt);
@@ -94,11 +95,12 @@ public class opsibelico extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(255, 204, 255));
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel2.setText("Paket 1");
+        jLabel2.setText("Paket 1 - 50k");
 
         plus3.setBackground(new java.awt.Color(0, 0, 153));
         plus3.setForeground(new java.awt.Color(153, 153, 255));
         plus3.setText("+");
+        plus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus3ActionPerformed(evt);
@@ -108,6 +110,7 @@ public class opsibelico extends javax.swing.JFrame {
         plus1.setBackground(new java.awt.Color(0, 0, 153));
         plus1.setForeground(new java.awt.Color(153, 153, 255));
         plus1.setText("+");
+        plus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         plus1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 plus1ActionPerformed(evt);
@@ -117,6 +120,7 @@ public class opsibelico extends javax.swing.JFrame {
         min1.setBackground(new java.awt.Color(0, 0, 153));
         min1.setForeground(new java.awt.Color(153, 153, 255));
         min1.setText("-");
+        min1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min1ActionPerformed(evt);
@@ -126,6 +130,7 @@ public class opsibelico extends javax.swing.JFrame {
         min2.setBackground(new java.awt.Color(0, 0, 153));
         min2.setForeground(new java.awt.Color(153, 153, 255));
         min2.setText("-");
+        min2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min2ActionPerformed(evt);
@@ -135,6 +140,7 @@ public class opsibelico extends javax.swing.JFrame {
         min3.setBackground(new java.awt.Color(0, 0, 153));
         min3.setForeground(new java.awt.Color(153, 153, 255));
         min3.setText("-");
+        min3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         min3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 min3ActionPerformed(evt);
@@ -145,6 +151,7 @@ public class opsibelico extends javax.swing.JFrame {
         keranjang2.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang2.setForeground(new java.awt.Color(153, 153, 255));
         keranjang2.setText("Tambah ke keranjang");
+        keranjang2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang2ActionPerformed(evt);
@@ -157,12 +164,13 @@ public class opsibelico extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(255, 204, 255));
         jLabel3.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel3.setText("Paket 2");
+        jLabel3.setText("Paket 2 - 70k");
 
         keranjang1.setBackground(new java.awt.Color(0, 0, 153));
         keranjang1.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang1.setForeground(new java.awt.Color(153, 153, 255));
         keranjang1.setText("Tambah ke keranjang");
+        keranjang1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang1ActionPerformed(evt);
@@ -173,6 +181,7 @@ public class opsibelico extends javax.swing.JFrame {
         keranjang3.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         keranjang3.setForeground(new java.awt.Color(153, 153, 255));
         keranjang3.setText("Tambah ke keranjang");
+        keranjang3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         keranjang3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keranjang3ActionPerformed(evt);
@@ -182,7 +191,7 @@ public class opsibelico extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(255, 204, 255));
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel4.setText("Paket 3");
+        jLabel4.setText("Paket 3 - 100k");
 
         hasil2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         hasil2.setText("0");
@@ -194,6 +203,7 @@ public class opsibelico extends javax.swing.JFrame {
         balik2co.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         balik2co.setForeground(new java.awt.Color(153, 153, 255));
         balik2co.setText("back");
+        balik2co.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         balik2co.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 balik2coActionPerformed(evt);
@@ -204,6 +214,7 @@ public class opsibelico extends javax.swing.JFrame {
         kekeranjang.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         kekeranjang.setForeground(new java.awt.Color(153, 153, 255));
         kekeranjang.setText("Lihat Keranjang");
+        kekeranjang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         kekeranjang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kekeranjangActionPerformed(evt);
@@ -316,7 +327,7 @@ public class opsibelico extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -362,7 +373,7 @@ public class opsibelico extends javax.swing.JFrame {
     private void keranjang2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keranjang2ActionPerformed
         // TODO add your handling code here:
         nama2co = "Hampers Paket 2 (pria)";
-        harga2co = count2co * 150000;
+        harga2co = count2co * 70000;
         if(count2co != 0){
             Totalbelanja.nama.add(nama2co);
             Totalbelanja.total.add(harga2co);
@@ -372,7 +383,7 @@ public class opsibelico extends javax.swing.JFrame {
     private void keranjang1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keranjang1ActionPerformed
         // TODO add your handling code here:
         nama1co = "Hampers Paket 1 (pria)";
-        harga1co = count1co * 100000;
+        harga1co = count1co * 50000;
         if(count1co != 0){
             Totalbelanja.nama.add(nama1co);
             Totalbelanja.total.add(harga1co);
@@ -382,7 +393,7 @@ public class opsibelico extends javax.swing.JFrame {
     private void keranjang3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keranjang3ActionPerformed
         // TODO add your handling code here:
         nama3co = "Hampers Paket 3 (pria)";
-        harga3co = count3co * 70000;
+        harga3co = count3co * 100000;
         if(count3co != 0){
             Totalbelanja.nama.add(nama3co);
             Totalbelanja.total.add(harga3co);

@@ -117,6 +117,9 @@
               <Color blue="82" green="4f" red="c4" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Hampers"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hampersceActionPerformed"/>
@@ -134,6 +137,9 @@
               <Color blue="82" green="4f" red="c4" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Bouquet"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buketceActionPerformed"/>
@@ -151,6 +157,9 @@
               <Color blue="82" green="4f" red="c4" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" back"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="balik1ActionPerformed"/>
